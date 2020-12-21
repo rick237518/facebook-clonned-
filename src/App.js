@@ -4,17 +4,12 @@ import Sidebar from './sidebar';
 import Feed from "./feed";
 import "./App.css";
 import Widgets from "./widget";
-import Login from "./Login";
-import {useStateValue} from "./stateProvider";
 
 
 function App (){
-	const [{user}]=useStateValue();
 	return(
 		<div className="app">
-			{!user? (
-			<Login/>
-			):(
+			
 				<div>
 			<Header/>
 			<div className="app__body">

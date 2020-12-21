@@ -8,17 +8,14 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoCallIcon from '@material-ui/icons/VideoCall';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import {useStateValue} from "./stateProvider";
 
 
 
 
 function Sidebar() {
-    const[{user}]=useStateValue();
 
     return (
         <div className="sidebar">
-         <SidebarRow src={user.photoURL} title={user.displayName}/>
 
             <SidebarRow Icon={LocalHospitalIcon}title='COVIC-19 Information Center '/>
 

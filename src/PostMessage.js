@@ -1,7 +1,7 @@
 import React from 'react';
 import './postmessage.css'
 
-const PostMessage =({name,image})=> {
+const PostMessage =({name,image,index})=> {
 
 return(
         <div style={{       
